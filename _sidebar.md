@@ -9,4 +9,4 @@
   
 * **Follow** 
 	
-	* [Github](https://jerinjacob1999)
+	* [Github](https://github.com/jerinjacob1999)
