@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Find awesome appinvetor extensions">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- Theme: Simple (latest v0.x.x) -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="vue" disabled>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css" title = "dark" >
+  <link rel="stylesheet" href="assets/css/main.css">
+  <nav>
+  <div class="demo-theme-preview">
+    <a data-theme="vue">Light</a>
+    <a data-theme="dark">Dark</a>
+  </div>
+
+  </nav>
+
+</head>
+<body>
+
+  <div id="app">Please wait....</div>
+  <script>
+    window.$docsify = {
+
+      'flexible-alerts': {
+      style: 'flat'
+    },
+
+    loadSidebar: true,
+    homepage: 'README.md',
+    loadNavbar: true,
+    disqus: 'https-jerinjacob1999-github-io-aiextensions',
+    alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+    },
+
+    tabs: {
+    persist    : true,      // default
+    sync       : false,      // default
+    theme      : 'classic', // default
+    tabComments: true,      // default
+    tabHeadings: true       // default
+  },
+      name: '',
+      subMaxLevel: 3,
+
+      repo: ''
+    }
+
+  </script>
+
+ 
+
+  <!-- docsify-themeable (latest v0.x.x) -->
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/matomo.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>
+
+
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+
+
+<script src="//unpkg.com/docsify/lib/plugins/disqus.min.js"></script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+<script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+
+
+  <style>
+  .demo-theme-preview a {
+    padding-right: 10px;
+  }
+
+  .demo-theme-preview a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+</style>
+  <script>
+  var preview = Docsify.dom.find('.demo-theme-preview');
+  var themes = Docsify.dom.findAll('[rel="stylesheet"]');
+
+  preview.onclick = function (e) {
+    var title = e.target.getAttribute('data-theme')
+
+
+    themes.forEach(function (theme) {
+      theme.disabled = theme.title !== title
+    });
+  };
+</script>
+
+
+</body>
+
+</html>
