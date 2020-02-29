@@ -107,19 +107,22 @@
 </script>
 
 <!-- Start of LiveChat (www.livechatinc.com) code -->
-<script type="text/javascript">
-  window.__lc = window.__lc || {};
-  window.__lc.license = 11763402;
-  (function() {
-    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-  })();
+
+<script>
+(function(d,t) {
+  var BASE_URL = 'https://chatbic.herokuapp.com';
+  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src= BASE_URL + "/packs/js/sdk.js";
+  s.parentNode.insertBefore(g,s);
+  g.onload=function(){
+    window.chatwootSDK.run({
+      websiteToken: 'YuJN1d36mEgZ6WhEWjTNzQ14',
+      baseUrl: BASE_URL
+    })
+  }
+})(document,"script");
 </script>
-<noscript>
-<a href="https://www.livechatinc.com/chat-with/11763402/" rel="nofollow">Chat with us</a>,
-powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
-</noscript>
+
 <!-- End of LiveChat code -->
 
 </body>
